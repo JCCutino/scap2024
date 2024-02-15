@@ -1,37 +1,53 @@
 "use strict"
 
-function checkForm() {
-    let firstAnswer = document.querySelector('input[name="btnradio1"]:checked');
-    let secondAnswer = document.querySelector('input[name="btnradio2"]:checked');
-    let thirdAnswer = document.querySelector('input[name="btnradio3"]:checked');
+function removeWord(span) {
+    // Deshabilitar el onclick para evitar múltiples eliminaciones
+    span.onclick = null;
 
-    if (firstAnswer) {
-        console.log("First answer selected:", firstAnswer.value);
+    // Obtener todos los elementos span con la clase "word"
+    var words = document.querySelectorAll('.word');
 
-    } else {
-        console.log("First answer not selected");
+    // Filtrar los elementos excluyendo el que tiene el id "pass"
+    var wordsFiltered = Array.from(words).filter(function (word) {
+        return word.id !== 'pass' && word.id !== 'user';
+    });
+
+    // Seleccionar un elemento span aleatorio para eliminar
+    var randomIndex = Math.floor(Math.random() * wordsFiltered.length);
+    var wordToRemove = wordsFiltered[randomIndex];
+
+    // Eliminar el elemento span seleccionado
+    wordToRemove.parentNode.removeChild(wordToRemove);
+}
+
+function showInfo(span) {
+    var id = span.id;
+    if (id === 'user') {
+        document.getElementById('name').textContent = 4251046;
+    } else if (id === 'pass') {
+        document.getElementById('password').textContent = "scap2024";
     }
 
-    if (secondAnswer) {
-        console.log("Second answer selected:", secondAnswer.value);
-
-    } else {
-        console.log("Second answer not selected");
-    }
-
-    if (thirdAnswer) {
-        console.log("Third answer selected:", thirdAnswer.value);
-
-    } else {
-        console.log("Third answer not selected");
-    }
-
-    if (firstAnswer.value == 3 && secondAnswer.value == 4 && thirdAnswer.value == 7) {
-        document.getElementById('hostName').textContent = 'scap2024.batcave.net';
+    if (document.getElementById('name').textContent == 4251046 && document.getElementById('password').textContent == "scap2024") {
         document.getElementById('main').remove();
-        document.getElementById('response').textContent = '"En tu camino hacia la libertad, observa las diferentes sendas que has recorrido. La clave para desbloquear el siguiente paso está en reunir y armonizar estas experiencias. Reflexiona sobre cómo unificarías las líneas del tiempo de tu historia digital. La respuesta a tu libertad yace en la fusión de conocimientos dispersos. ¡Encuentra el camino para avanzar!"';
-    } else {
-        document.getElementById('response').textContent = 'Incorrecto';
 
+        document.getElementById('response').textContent = 'Acceso concedido, en el servidor se encuentra la clave para abrir la puerta. Insértala para abrir la puerta';
+        document.getElementById('passForm').removeAttribute('hidden');
+    }
+}
+
+function checkForm() {
+    // Obtén el valor del campo de texto por su nombre
+    let inputValue = document.getElementsByName('clave')[0].value;
+
+    // Verifica si el valor del campo es "escaporia"
+    if (inputValue == 'escaporia') {
+        // Simula el envío del formulario
+       document.getElementById('response').textContent='Puerta abierta';
+       return true;
+    } else {
+       
+        document.getElementById('response').textContent='Contraseña inválida';
+        return false;
     }
 }
