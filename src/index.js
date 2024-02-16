@@ -29,7 +29,7 @@ function checkForm() {
     if (firstAnswer.value == 3 && secondAnswer.value == 4 && thirdAnswer.value == 7) {
         document.getElementById('hostName').textContent = 'scap2024.batcave.net';
         document.getElementById('main').remove();
-        document.getElementById('response').textContent = '"En tu camino hacia la libertad, observa las diferentes sendas que has recorrido. La clave para desbloquear el siguiente paso está en reunir y armonizar estas experiencias. Reflexiona sobre cómo unificarías las líneas del tiempo de tu historia digital. La respuesta a tu libertad yace en la fusión de conocimientos dispersos. ¡Encuentra el camino para avanzar!"';
+        document.getElementById('response').textContent = 'En el entramado de bifurcaciones y nodos, busca la senda donde la libertad aguarda. Un cambio sutil puede abrir puertas desconocidas. Explora con astucia el dominio de las versiones y encontrarás el camino hacia la libertad deseada.';
     } else {
         document.getElementById('response').textContent = 'Incorrecto';
 
