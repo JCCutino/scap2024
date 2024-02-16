@@ -44,6 +44,13 @@
 
         <div class="container mt-5 text text-goblin fs-2" id="main">
 
+            <p class="fs-6">Accediendo al terminal...</p>
+            <p class="fs-6">Mostrando encriptación de datos...</p>
+            <div class="row justify-content-start align-items-center g-2">
+                <div class="col-6 lives fs-4">#</div>
+                <div class="col-6 lives fs-4">#</div>
+            </div>
+
             <div id="hacking-text">
                 <p>
                     "@$JISL<span class="delete" onclick="removeWord(this)">
@@ -51,21 +58,21 @@
                     </span>HDGSKAO=/%SKA)"&J"SFI&""&/%|@#DJFOASK
                 </p>
                 <p>
-                    JSGJGSIOFN·$#@€¬LAGHLSON€€DSAGSL)·=$?¿'¡RNCK<span class="word">DOCKER</span>
+                    JSGJGSIOFN·$#@€¬LAGHLSON€€DSAGSL)·=$?¿'¡RNCK<span class="word" onclick="removeLives()">DOCKER</span>
                 </p>
                 <p>
-                    ASWDDS<span class="word">GIT</span>!""?¡2294(/3)2#~¬KDIL<span class="word">REPOSITORIO</span>$~#HFUSK
+                    ASWDDS<span class="word" onclick="removeLives()">GIT</span>!""?¡2294<span class="delete" onclick="removeWord(this)">(/3)</span>2#~¬KDIL<span class="word" onclick="removeLives()">REPOSITORIO</span>$~#HFUSK
                 </p>
                 <p>
-                    REWW@@~€¬¿UCNAPSNCLÑA~@€¬'¡!¡<span class="word">RAFA</span>KOSLL@#ÑSO
+                    REWW@@~€¬¿UCNAPSNCLÑA~@€¬'¡!¡<span class="word" onclick="removeLives()">RAFA</span>KOSLL@#ÑSO
                 </p>
                 <p>
-                    SJMC672SADF&%$GDKC/(=?¿JFULSOC<span class="delete" onclick="removeWord(this)">[]</span>HDGSKAO=/%SKA)"&J
+                    SJMC672SA<span class="word" onclick="removeLives()">BRANCH</span>C/(=?¿JFULSOC<span class="delete" onclick="removeWord(this)">[]</span>HDGSKAO=/%SKA)"&J
                 </p>
                 <p>
                     JSVIVBN&/r·%$(HJSHPS/"&$/"·%SSGAÇ*`+DJHDUBNW·"##~~ </p>
                 <p>
-                    `]`SAFA&52%&$FASDF<span class="word">>PREMATURO></span>8)(22$·HFKIJIWND
+                    `]`SAFA&52%&$FASDF<span class="word" onclick="removeLives()">>PREMATURO></span>8)(22$·HFKIJIWND
                 </p>
                 <p>
                     KSOEL/&%$"SF=93(&2<span class="word" onclick="showInfo(this)" id="pass">SCAP2024</span>AKSI8RNG&!%$@#_´`S/562#~€¬¬
@@ -86,14 +93,14 @@
         <div class="container">
             <p class="text-center text text-goblin" id="response"></p>
             <form onsubmit="return checkForm();" action='free.php' id="passForm" hidden>
-        <div class="mb-3 text text-goblin">
-            <label for="" class="form-label">Clave</label>
-            <input type="text" class="form-control form-text text-goblin" name="clave" aria-describedby="helpId" placeholder="" />
-        </div>
-        <button type="submit" class="btn text text-goblin">
-            Abrir compuerta
-        </button>
-    </form>
+                <div class="mb-3 text text-goblin">
+                    <label for="" class="form-label">Clave</label>
+                    <input type="text" class="form-control form-text text-goblin" name="clave" aria-describedby="helpId" placeholder="" />
+                </div>
+                <button type="submit" class="btn text text-goblin">
+                    Abrir compuerta
+                </button>
+            </form>
         </div>
     </main>
     <footer>

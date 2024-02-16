@@ -20,6 +20,19 @@ function removeWord(span) {
     wordToRemove.parentNode.removeChild(wordToRemove);
 }
 
+function removeLives(){
+    var livesElements = document.querySelectorAll('.lives');
+
+// Verifica si hay al menos un elemento con la clase 'lives'
+if (livesElements.length > 0) {
+    // Elimina el primer elemento con la clase 'lives'
+    livesElements[0].remove();
+} else {
+    window.location.reload();
+}
+
+}
+
 function showInfo(span) {
     var id = span.id;
     if (id === 'user') {
