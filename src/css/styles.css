@@ -19,5 +19,18 @@ body{
 }
 
 .text-goblin{
-color: greenyellow;
+color: greenyellow !important;
+}
+
+.delete:hover{
+background-color: black;
+}
+
+.word:hover{
+    background-color: black;
+}
+
+.form-text{
+    background-color: transparent !important;
+    border-color: green  !important;
 }

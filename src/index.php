@@ -26,7 +26,7 @@
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col-12 col-md-4">
                     <h4 class="fw-light text-center">Nombre del host</h4>
-                    <p class="text-center" id="hostName"></p>
+                    <p class="text-center" id="hostName">scap2024.batcave.net</p>
 
                 </div>
                 <div class="col-12 col-md-4">
@@ -41,67 +41,66 @@
 
             </div>
         </div>
-        
-        <div class="container mt-5 text text-goblin" id="main">
 
-            <h2 class="fw-light text-center mt-3">¿Cuál es el propósito principal de Docker Compose en el ecosistema de Docker?</h2>
+        <div class="container mt-5 text text-goblin fs-2" id="main">
 
-            <div class="row justify-content-center align-items-center g-2 mt-3">
-                <div class="col-12 text-center">
-                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio1" id="btncheck1" autocomplete="off" value='1' />
-                        <label class="btn btn-dark" for="btncheck1">Gestionar múltiples contenedores</label>
-
-                        <input type="radio" class="btn-check" name="btnradio1" id="btncheck2" autocomplete="off" value='2' />
-                        <label class="btn btn-dark" for="btncheck2">Compilar imágenes de docker</label>
-
-                        <input type="radio" class="btn-check" name="btnradio1" id="btncheck3" autocomplete="off" value='3' />
-                        <label class="btn btn-dark" for="btncheck3">Orquestar la distribución de contenedores en clústeres.</label>
-                    </div>
-                </div>
-            </div>
-            <h2 class="fw-light text-center  mt-3">¿Cuál es el comando de Docker utilizado para construir una imagen a partir de un Dockerfile?</h2>
-
-            <div class="row justify-content-center align-items-center g-2 mt-3">
-                <div class="col-12 text-center">
-                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio2" id="btncheck4" autocomplete="off" value='4' />
-                        <label class="btn btn-dark" for="btncheck4">docker start</label>
-
-                        <input type="radio" class="btn-check" name="btnradio2" id="btncheck5" autocomplete="off" value='5' />
-                        <label class="btn btn-dark" for="btncheck5">docker build</label>
-
-                        <input type="radio" class="btn-check" name="btnradio2" id="btncheck6" autocomplete="off" value='6' />
-                        <label class="btn btn-dark" for="btncheck6">docker create</label>
-                    </div>
-                </div>
+            <p class="fs-6">Accediendo al terminal...</p>
+            <p class="fs-6">Mostrando encriptación de datos...</p>
+            <div class="row justify-content-start align-items-center g-2">
+                <div class="col-6 lives fs-4">#</div>
+                <div class="col-6 lives fs-4">#</div>
             </div>
 
-            <h2 class="fw-light text-center  mt-3">¿Cómo se detiene un contenedor en ejecución en Docker?</h2>
-            <div class="row justify-content-center align-items-center g-2 mt-3">
-                <div class="col-12 text-center">
-                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio3" id="btncheck7" autocomplete="off" value='7' />
-                        <label class="btn btn-dark" for="btncheck7">docker stop</label>
+            <div id="hacking-text">
+                <p>
+                    "@$JISL<span class="delete" onclick="removeWord(this)">
+                        <() /%>
+                    </span>HDGSKAO=/%SKA)"&J"SFI&""&/%|@#DJFOASK
+                </p>
+                <p>
+                    JSGJGSIOFN·$#@€¬LAGHLSON€€DSAGSL)·=$?¿'¡RNCK<span class="word" onclick="removeLives()">DOCKER</span>
+                </p>
+                <p>
+                    ASWDDS<span class="word" onclick="removeLives()">GIT</span>!""?¡2294<span class="delete" onclick="removeWord(this)">(/3)</span>2#~¬KDIL<span class="word" onclick="removeLives()">REPOSITORIO</span>$~#HFUSK
+                </p>
+                <p>
+                    REWW@@~€¬¿UCNAPSNCLÑA~@€¬'¡!¡<span class="word" onclick="removeLives()">RAFA</span>KOSLL@#ÑSO
+                </p>
+                <p>
+                    SJMC672SA<span class="word" onclick="removeLives()">BRANCH</span>C/(=?¿JFULSOC<span class="delete" onclick="removeWord(this)">[]</span>HDGSKAO=/%SKA)"&J
+                </p>
+                <p>
+                    JSVIVBN&/r·%$(HJSHPS/"&$/"·%SSGAÇ*`+DJHDUBNW·"##~~ </p>
+                <p>
+                    `]`SAFA&52%&$FASDF<span class="word" onclick="removeLives()">>PREMATURO></span>8)(22$·HFKIJIWND
+                </p>
+                <p>
+                    KSOEL/&%$"SF=93(&2<span class="word" onclick="showInfo(this)" id="pass">SCAP2024</span>AKSI8RNG&!%$@#_´`S/562#~€¬¬
+                </p>
+                <p>
+                    JHAIV2$·"/·%@JHFUCBLHOH@ÑJOFKVZNWI)/&·'¡!?LAOCNGWYV
+                </p>
 
-                        <input type="radio" class="btn-check" name="btnradio3" id="btncheck8" autocomplete="off" value='8' />
-                        <label class="btn btn-dark" for="btncheck8">docker kill</label>
+                <p>
+                    @JSICLWN~~&·"·"&/##|SDDLKANVA<span class="word" onclick="showInfo(this)" id="user">4251046</span>2#~€¬¬ODVMGO
+                </p>
 
-                        <input type="radio" class="btn-check" name="btnradio3" id="btncheck9" autocomplete="off" value='9' />
-                        <label class="btn btn-dark" for="btncheck9">docker pause</label>
-                    </div>
-                </div>
+
+
             </div>
-            <div class="text-center mt-5">
-                <button onclick="checkForm()" class="btn btn-primary fw-light fs-5 p-4">
-                    Comprobar
-                </button>
-            </div>
-            
+
         </div>
         <div class="container">
-        <p class="text-center text text-goblin" id="response"></p>
-            
+            <p class="text-center text text-goblin" id="response"></p>
+            <form onsubmit="return checkForm();" action='free.php' id="passForm" hidden>
+                <div class="mb-3 text text-goblin">
+                    <label for="" class="form-label">Clave</label>
+                    <input type="text" class="form-control form-text text-goblin" name="clave" aria-describedby="helpId" placeholder="" />
+                </div>
+                <button type="submit" class="btn text text-goblin">
+                    Abrir compuerta
+                </button>
+            </form>
         </div>
     </main>
     <footer>
